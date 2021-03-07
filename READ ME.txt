@@ -1,0 +1,27 @@
+(1)
+Anaconda Prompt:
+
+pip install pandas
+pip install mutagen
+
+(2)
+
+The text files containing signal data can be imported to and exported from/to
+MP3 files using Audacity (Tools - Sample Data Export/Import)
+
+However, the input file in the python program must be a .csv file, 
+so export a .txt file from Audacity and save it as a .csv file in Excel. 
+
+You may have to slightly change the format of the .csv file 
+in order for the EQ program to properly read it. Make sure the cell in row 1 column 1
+contains 'L' while the cell in row 1 column 2 contains 'R'. Below should be two columns
+of signal data. 
+
+In order to perform the signal processing properly, you must use the correct sampling
+frequency and time step. You can find both of these by using Sample_Rate_Finder.py
+
+
+(3) 
+
+You may need to change some file names in the program. Look for 
+the "Export filtered signals" section in AudioEQ.py and make sure you save your outputs to the correct folder. 
